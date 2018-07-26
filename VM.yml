@@ -9,6 +9,8 @@
       name: weeuplatctho01
       vm_size: Standard_DS1_v2
       admin_username: ThorkellHeida
+      admin_password: tstvm01
+      network_interface_names: TstNic01
       image:
         offer: RHEL
         publisher: RedHat
