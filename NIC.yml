@@ -1,0 +1,15 @@
+- name: Create NIC
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Create a network interface
+    azure_rm_networkinterface:
+      name: TstNic01
+      resource_group: WeEu-Pla-Prd-Rsg-01
+      virtual_network_name: WeEU-Pla-Prd-Vnet-02
+      subnet_name: WeEU-Pla-Prd-Vnet-Snt-02
+      security_group_name: 
+      ip_configurations:
+        - name: ThTstpipconfig01
+          public_ip_address_name: ThTstpip01
+          primary: True
