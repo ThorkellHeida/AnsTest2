@@ -1,1 +1,2 @@
-
+---
+az_resource_group_name: "{{ application_name }}RG"
