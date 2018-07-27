@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars_files:
-    - ./AnsTest2/vars/vars.yml
+    - ./vars/vars.yml
   tasks:
   - name: Create a resource group
     azure_rm_resourcegroup:
