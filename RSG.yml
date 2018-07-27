@@ -2,10 +2,12 @@
 - name: Create RG
   hosts: localhost
   connection: local
+  vars_files:
+    - ./vars/vars.yml
   tasks:
   - name: Create a resource group
     azure_rm_resourcegroup:
-      name: WeEu-Pla-Prd-Rsg-01
+      name: "{{ az_resource_group_name }}"
       location: westeurope
       tags:
           testing: testing
