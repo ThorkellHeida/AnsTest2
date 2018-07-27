@@ -1,2 +1,3 @@
 ---
-az_resource_group_name: "ThTestRg001"
+az_resource_group_name: "{{application_name}}"
+application_name: "ThTestRg02"
